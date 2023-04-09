@@ -1,36 +1,6 @@
 {
   "extractors": [
     {
-      "title": "Get DNS Query",
-      "extractor_type": "split_and_index",
-      "converters": [],
-      "order": 0,
-      "cursor_strategy": "copy",
-      "source_field": "query",
-      "target_field": "query_record",
-      "extractor_config": {
-        "index": 1,
-        "split_by": "|"
-      },
-      "condition_type": "none",
-      "condition_value": ""
-    },
-    {
-      "title": "Get DNS Query Type",
-      "extractor_type": "split_and_index",
-      "converters": [],
-      "order": 0,
-      "cursor_strategy": "copy",
-      "source_field": "query",
-      "target_field": "query_record_type",
-      "extractor_config": {
-        "index": 2,
-        "split_by": "|"
-      },
-      "condition_type": "none",
-      "condition_value": ""
-    },
-    {
       "title": "Extract PowerDNS Data",
       "extractor_type": "grok",
       "converters": [],
